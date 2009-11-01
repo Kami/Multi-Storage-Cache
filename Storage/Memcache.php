@@ -3,13 +3,12 @@
 /**
 * Multi Storage Cache
 *
-* Simple caching abstraction library supporting multiple storage types (APC, XCache, eAccelerator, memcached and file)
+* Simple caching abstraction library supporting multiple storage types
 *
 * @package MultiStorageCache
 * @author Tomaž Muraus
 * @link http://www.tomaz-muraus.info
 * @license GPL
-* @version 1.0
 */
 
 namespace MultiStorageCache\Storage;
@@ -70,6 +69,5 @@ class Memcache implements IStorage
         return $this->_memcache->getStats();
     }
 }
-
 
 ?>
